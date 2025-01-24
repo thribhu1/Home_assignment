@@ -1,0 +1,12 @@
+- Install psycopg2 to connect with postgres-sql
+
+- Key features of this implementation:
+- Class-based Structure: Encapsulates all ETL functionality in a reusable class
+- Context Manager Support: Uses __enter__/__exit__ for safe resource management
+- Batch Processing: Inserts data in batches for better performance
+- Comprehensive Validation: Includes all specified data validation rules
+- Dynamic Table Handling: Creates country-specific tables on demand
+- Deduplication Logic: Uses window functions to keep latest records
+- Derived Columns: Calculates age and days-since-last-consultation-greater-than-30(boolean)
+- Error Handling: Robust transaction management with rollback capabilities
+- Logging: Detailed logging for monitoring and debugging
